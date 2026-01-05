@@ -1,0 +1,38 @@
+.header{
+    background-color: white;
+}
+
+.header__inner{
+    margin: 5px 10px;
+    max-width: 1230px;
+
+}
+
+.header__logo{
+    text-decoration: none;
+
+    color: orange;
+}
+
+.main{
+    background-color: rgb(183, 183, 183);
+}
+
+.catalog__heading{
+    margin-left: 40px;
+
+}
+
+.addition__button{
+    margin-right: 40px;
+
+    text-decoration: none;
+
+    background-color: orange;
+    color: black;
+}
+
+.catalog__content{
+    display: flex;
+    justify-content: space-between;
+}
