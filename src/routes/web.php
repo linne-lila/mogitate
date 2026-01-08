@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/products', [ContactController::class, 'catalog']);
+
+Route::get('/products/register', [ContactController::class, 'register']);

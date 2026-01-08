@@ -1,0 +1,19 @@
+.header {
+    background-color: white;
+}
+
+.header__inner {
+    margin: 5px 10px;
+    max-width: 1230px;
+
+}
+
+.header__logo {
+    text-decoration: none;
+
+    color: orange;
+}
+
+.main {
+    background-color: rgb(183, 183, 183);
+}

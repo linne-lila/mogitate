@@ -19,18 +19,45 @@
     </header>
 
     <main class="main">
-        <div class="catalog__content">
-            <div class="catalog__heading">
+        <div class="catalog__heading">
+            <div class="catalog__title">
                 <h2>商品一覧</h2>
-
             </div>
 
-            <div class="addition">
+            <div class="catalog__addition">
                 <a class="addition__button" href="/products/register">
                     ＋商品を追加
                 </a>
             </div>
+        </div>
 
+        <div class="catalog__content">
+            <div class="catalog__search">
+                <form action="http://localhost/products" method="get">
+                    <input class="catalog__search-area" type="search" name="search" placeholder="商品名で検索">
+                    <input class="catalog__search-submit" type="submit" name="submit" value="検索">
+                </form>
+                        
+                <div class="catalog__sort">
+                    <h4>価格順で表示</h4>
+                </div>
+
+                <div class="catalog__sort">
+                </div>
+            </div>
+
+            <table>
+                @foreach ($products as $product)
+                    <tr>
+                        <td>{{$product->image}}</td>
+                        <td>{{$product->name}}</td>
+                        <td>{{$product->price}}</td>
+                    </tr>
+                @endforeach
+            </table>
+                 
+  
+            </div>
         </div>
     </main>
     
