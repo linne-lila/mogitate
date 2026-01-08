@@ -18,21 +18,62 @@
     background-color: rgb(183, 183, 183);
 }
 
-.catalog__heading{
+.catalog__title{
     margin-left: 40px;
+    margin-top: 10%;
 
+}
+
+.catalog__addition{
+    margin-top: 185px;
 }
 
 .addition__button{
     margin-right: 40px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 2px gray;
 
     text-decoration: none;
+    border-radius: 3px;
 
     background-color: orange;
     color: black;
 }
 
-.catalog__content{
+.catalog__heading{
     display: flex;
     justify-content: space-between;
+}
+
+.catalog__search{
+    width: 20%;
+
+    background-color: red;
+}
+
+.catalog__search-area{
+    border-radius: 3px;
+
+    display: flex;
+
+}
+
+.catalog__content{
+    display: flex;
+}
+
+.catalog__content{
+    text-align: center;
+
+}
+
+.catalog__search-area{
+    margin-left: 20%;
+}
+
+.catalog__search-submit{
+
+
+    background-color: orange;
+    color: black;
 }
