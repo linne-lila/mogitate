@@ -46,12 +46,15 @@
                 </div>
             </div>
 
-            <table>
+            <table bgcolor="white">
                 @foreach ($products as $product)
                     <tr>
-                        <td>{{$product->image}}</td>
+                        <td colspan="2"><img src="{{ asset('storage/'. $product->image) }}" width="300" height="200"></td>
+                    </tr>
+
+                    <tr>
                         <td>{{$product->name}}</td>
-                        <td>{{$product->price}}</td>
+                        <td>￥{{$product->price}}</td>
                     </tr>
                 @endforeach
             </table>

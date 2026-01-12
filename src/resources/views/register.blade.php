@@ -26,7 +26,8 @@
 
         </div>
 
-        <form class="form">
+        <form class="form" action="" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">商品名</span>
@@ -67,10 +68,10 @@
 
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <form method="post" enctype="multipart/form-data">
-                            <input type="file" name="image">
-                        </form>
+                            <input type="file" name="image" required>
                     </div>
+
+                    
                     <div class="form__error">
                         <!--バリデーション機能を実装したら記述します。-->
                     </div>
@@ -112,6 +113,14 @@
                     </div>
                 </div> 
             </div>
+
+            <div class="register__addition">
+                <a class="addition__button" href="/products">
+                    戻る
+                </a>
+            </div>
+
+            <button>登録</button>
 
 
         </form>
