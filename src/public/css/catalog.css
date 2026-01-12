@@ -47,8 +47,6 @@
 
 .catalog__search{
     width: 20%;
-
-    background-color: red;
 }
 
 .catalog__search-area{
@@ -77,3 +75,15 @@
     background-color: orange;
     color: black;
 }
+
+.goods{
+    background: white;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+/* tr{
+    box-shadow: 1px 1px 2px gray;
+} */

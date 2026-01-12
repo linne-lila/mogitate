@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +23,5 @@ Route::get('/', function () {
 Route::get('/products', [ContactController::class, 'catalog']);
 
 Route::get('/products/register', [ContactController::class, 'register']);
+
+Route::get('/products', [ProductController::class, 'catalog']);

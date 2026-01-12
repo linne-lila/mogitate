@@ -7,6 +7,12 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
+    public function create(Request $request){
+        $form = $request->all();
+        Author::create($form);
+        return redirect('/products');
+    }
+
     public function catalog()
     {
         $products = Product::all();
